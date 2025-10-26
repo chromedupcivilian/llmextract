@@ -1,0 +1,40 @@
+[project]
+name = "llmextract"
+version = "0.2.0"
+description = "A library to extract structured information from unstructured text using LLMs, powered by LangChain."
+authors = [
+    { name = "Harshaditya Sharma", email = "mail@harshaditya.com" },
+]
+dependencies = [
+    "langchain>=0.2.0",
+    "langchain-openai>=0.1.0",
+    "langchain-ollama>=0.1.0",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = "Apache-2.0"
+keywords = ["llm", "langchain", "extraction", "structured-data", "nlp", "openrouter", "ollama"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.urls]
+Homepage = "https://github.com/chromedupcivilian/llmextract"
+Repository = "https://github.com/chromedupcivilian/llmextract"
+"Bug Tracker" = "https://github.com/chromedupcivilian/llmextract/issues"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4.0",
+    "pytest>=8.0.0",
+]
